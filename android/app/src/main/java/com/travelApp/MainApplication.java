@@ -39,15 +39,7 @@ public class MainApplication extends Application implements ReactApplication {
             new RealmReactPackage(),
             new SvgPackage(),
             new LinearGradientPackage(),
-            new GoogleAnalyticsBridgePackage(),
-            new RealmReactPackage(),
-            new SvgPackage(),
-            new LinearGradientPackage(),
-            new GoogleAnalyticsBridgePackage(),
-            new RealmReactPackage(),
-            new GoogleAnalyticsBridgePackage(),
-            new LinearGradientPackage(),
-            new SvgPackage()
+            new GoogleAnalyticsBridgePackage()
       );
     }
 
