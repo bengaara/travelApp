@@ -90,7 +90,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.akveo.kittenTricks"
+        applicationId "com.travelApp"
         minSdkVersion 16
         targetSdkVersion 22
         ndk {
