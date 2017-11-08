@@ -27,7 +27,7 @@ function getCurrentRouteName(navigationState) {
 let SideMenu = withRkTheme(Screens.SideMenu);
 const KittenApp = StackNavigator({
   First: {
-    screen: Screens.SplashScreen
+    screen: Screens.Login
   },
   Home: {
     screen: DrawerNavigator({

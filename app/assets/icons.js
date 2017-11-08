@@ -19,6 +19,7 @@ export const FontAwesome = {
   twitter: String.fromCharCode(61593),
   google: String.fromCharCode(61856),
   facebook: String.fromCharCode(61594),
+  instagram: String.fromCharCode(parseInt('f16d', 16)),
   plus: String.fromCharCode(61543),
   search: String.fromCharCode(61442),
   smile: String.fromCharCode(61720),

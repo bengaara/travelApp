@@ -17,7 +17,7 @@ export class Walkthrough extends React.Component {
   _renderItem = ({item}) => {
     let {width} = Dimensions.get('window');
     return (
-      <View style={[styles.item, {width: width}]}>
+      <View style={[styles.item, {width: 10}]}>
         {item}
       </View>
     );
