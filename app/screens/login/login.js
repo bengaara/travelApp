@@ -2,7 +2,9 @@ import React from 'react';
 import {
   View,
   Image,
-  Keyboard
+  Keyboard,
+  FlatList,
+  Text
 } from 'react-native';
 import {
   RkButton,
@@ -50,26 +52,33 @@ export class Login extends React.Component {
               this.props.navigation.goBack()
             }}/>
           </View>
-          <View style={styles.buttons}>
-            <RkButton style={styles.button} rkType='social'>
-              <RkText rkType='awesome hero'>{FontAwesome.twitter}</RkText>
-            </RkButton>
-            <RkButton style={styles.button} rkType='social'>
-              <RkText rkType='awesome hero'>{FontAwesome.google}</RkText>
-            </RkButton>
-            <RkButton style={styles.button} rkType='social'>
-              <RkText rkType='awesome hero'>{FontAwesome.facebook}</RkText>
-            </RkButton>
-            <RkButton style={styles.button} rkType='social'>
-              <RkText rkType='awesome hero'>{FontAwesome.instagram}</RkText>
-            </RkButton>
-          </View>
+          <View style={styles.textRow}>
+              <RkText rkType='primary3'>Or sign in with:</RkText>
+            </View>
+          <FlatList horizontal={true} contentContainerStyle={styles.buttons}
+        data={[
+          <RkButton key='a' style={styles.button} rkType='social'>
+             <RkText rkType='awesome hero accentColor'>{FontAwesome.twitter}</RkText>
+           </RkButton>,
+            <RkButton key='b' style={styles.button} rkType='social'>
+            <RkText rkType='awesome hero accentColor'>{FontAwesome.google}</RkText>
+          </RkButton>,
+            <RkButton key='c' style={styles.button} rkType='social'>
+            <RkText rkType='awesome hero accentColor'>{FontAwesome.facebook}</RkText>
+          </RkButton>,
+          <RkButton key='d' style={styles.button} rkType='social'>
+          <RkText rkType='awesome hero accentColor'>{FontAwesome.instagram}</RkText>
+        </RkButton>
+         ]}
+  renderItem={({item}) => item}
+/>
+    
 
           <View style={styles.footer}>
             <View style={styles.textRow}>
-              <RkText rkType='primary3'>Don’t have an account?</RkText>
-              <RkButton rkType='clear' onPress={() => this.props.navigation.navigate('SignUp')}>
-                <RkText rkType='header6'> Sign up now </RkText>
+              <RkText rkType='primary3'>@otosolutions 2017</RkText>
+              <RkButton rkType='clear' >
+                <RkText rkType='header6'>  </RkText>
               </RkButton>
             </View>
           </View>
@@ -110,10 +119,14 @@ let styles = RkStyleSheet.create(theme => ({
   },
   textRow: {
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginVertical: 5
   },
   button: {
-    borderColor: theme.colors.border.solid
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    borderColor: theme.colors.border.solid,
+    marginHorizontal: 5
   },
   footer: {}
 }));
