@@ -6,15 +6,9 @@ import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactApplication;
 import io.realm.react.RealmReactPackage;
 import com.horcrux.svg.SvgPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
+
 import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import io.realm.react.RealmReactPackage;
-import com.horcrux.svg.SvgPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
-import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
-import io.realm.react.RealmReactPackage;
-import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
-import com.horcrux.svg.SvgPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
